@@ -66,5 +66,6 @@ gulp.task('images', function(){
 });
 
 gulp.task('default', gulp.parallel('watch','html', 'server', 'styles', 'scripts', 'fonts', 'icons', 'mailer', 'images'));
+gulp.task('build', gulp.parallel('styles', 'scripts', 'fonts', 'icons', 'html', 'images'));
 
 
